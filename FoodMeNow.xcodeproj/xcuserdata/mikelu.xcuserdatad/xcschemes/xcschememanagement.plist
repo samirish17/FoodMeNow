@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FMNWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>FoodMeNow.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>9B6746831DBD54B800969E45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BFE0A96C1DBD31BA00FE3883</key>
 		<dict>
 			<key>primary</key>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7518175D24F38EDF08C2125DD3A1A34B"
-               BuildableName = "Pods_FoodMeNowUITests.framework"
-               BlueprintName = "Pods-FoodMeNowUITests"
+               BlueprintIdentifier = "C1DBCAA5C466BDB794781994CBD798E9"
+               BuildableName = "Pods_FMNWidget.framework"
+               BlueprintName = "Pods-FMNWidget"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7518175D24F38EDF08C2125DD3A1A34B"
-            BuildableName = "Pods_FoodMeNowUITests.framework"
-            BlueprintName = "Pods-FoodMeNowUITests"
+            BlueprintIdentifier = "C1DBCAA5C466BDB794781994CBD798E9"
+            BuildableName = "Pods_FMNWidget.framework"
+            BlueprintName = "Pods-FMNWidget"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,6 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C1DBCAA5C466BDB794781994CBD798E9"
+            BuildableName = "Pods_FMNWidget.framework"
+            BlueprintName = "Pods-FMNWidget"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
