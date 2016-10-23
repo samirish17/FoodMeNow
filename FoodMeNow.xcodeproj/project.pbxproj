@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F066D958FB1F2FCEA675D40 /* Pods_FoodMeNowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A65534968A5438D7E4F43E /* Pods_FoodMeNowUITests.framework */; };
+		309B7B5EC06DA2EB63B6C099 /* Pods_FoodMeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB80D62C16FDDE8876947BB3 /* Pods_FoodMeNow.framework */; };
+		5182BB0878FAC5A06DA1CD24 /* Pods_FoodMeNowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B9F94850BEBADD249196A7 /* Pods_FoodMeNowTests.framework */; };
 		BFE0A9711DBD31BA00FE3883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A9701DBD31BA00FE3883 /* AppDelegate.swift */; };
 		BFE0A9731DBD31BA00FE3883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A9721DBD31BA00FE3883 /* ViewController.swift */; };
 		BFE0A9761DBD31BA00FE3883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE0A9741DBD31BA00FE3883 /* Main.storyboard */; };
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10E29A8C466AEF92460C5C7B /* Pods-FoodMeNowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodMeNowUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodMeNowUITests/Pods-FoodMeNowUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		44B9F94850BEBADD249196A7 /* Pods_FoodMeNowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodMeNowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A65534968A5438D7E4F43E /* Pods_FoodMeNowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodMeNowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		848E080ABF0A8A6A11D8E063 /* Pods-FoodMeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodMeNow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodMeNow/Pods-FoodMeNow.debug.xcconfig"; sourceTree = "<group>"; };
 		BFE0A96D1DBD31BA00FE3883 /* FoodMeNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodMeNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE0A9701DBD31BA00FE3883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE0A9721DBD31BA00FE3883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		BFE0A98F1DBD31BA00FE3883 /* FoodMeNowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodMeNowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE0A9931DBD31BA00FE3883 /* FoodMeNowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMeNowUITests.swift; sourceTree = "<group>"; };
 		BFE0A9951DBD31BA00FE3883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C29F37949CEA7E86F395F593 /* Pods-FoodMeNowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodMeNowUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodMeNowUITests/Pods-FoodMeNowUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB80D62C16FDDE8876947BB3 /* Pods_FoodMeNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodMeNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB3F0DDB3953D6C3813207E /* Pods-FoodMeNowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodMeNowTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodMeNowTests/Pods-FoodMeNowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3400911C82E091D9BA75FD3 /* Pods-FoodMeNowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodMeNowTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodMeNowTests/Pods-FoodMeNowTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED3C88B7E9541206C42837BA /* Pods-FoodMeNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodMeNow.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodMeNow/Pods-FoodMeNow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309B7B5EC06DA2EB63B6C099 /* Pods_FoodMeNow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5182BB0878FAC5A06DA1CD24 /* Pods_FoodMeNowTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F066D958FB1F2FCEA675D40 /* Pods_FoodMeNowUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EF23941976AF046BA3F617E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				848E080ABF0A8A6A11D8E063 /* Pods-FoodMeNow.debug.xcconfig */,
+				ED3C88B7E9541206C42837BA /* Pods-FoodMeNow.release.xcconfig */,
+				DAB3F0DDB3953D6C3813207E /* Pods-FoodMeNowTests.debug.xcconfig */,
+				E3400911C82E091D9BA75FD3 /* Pods-FoodMeNowTests.release.xcconfig */,
+				10E29A8C466AEF92460C5C7B /* Pods-FoodMeNowUITests.debug.xcconfig */,
+				C29F37949CEA7E86F395F593 /* Pods-FoodMeNowUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AAF199287B053AF5D213AEE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB80D62C16FDDE8876947BB3 /* Pods_FoodMeNow.framework */,
+				44B9F94850BEBADD249196A7 /* Pods_FoodMeNowTests.framework */,
+				70A65534968A5438D7E4F43E /* Pods_FoodMeNowUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFE0A9641DBD31BA00FE3883 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +121,8 @@
 				BFE0A9871DBD31BA00FE3883 /* FoodMeNowTests */,
 				BFE0A9921DBD31BA00FE3883 /* FoodMeNowUITests */,
 				BFE0A96E1DBD31BA00FE3883 /* Products */,
+				5EF23941976AF046BA3F617E /* Pods */,
+				AAF199287B053AF5D213AEE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFE0A9981DBD31BA00FE3883 /* Build configuration list for PBXNativeTarget "FoodMeNow" */;
 			buildPhases = (
+				80C976F8BEE35E14FF4F3D0C /* [CP] Check Pods Manifest.lock */,
 				BFE0A9691DBD31BA00FE3883 /* Sources */,
 				BFE0A96A1DBD31BA00FE3883 /* Frameworks */,
 				BFE0A96B1DBD31BA00FE3883 /* Resources */,
+				F26A5C9B0C373571E7DF2FAD /* [CP] Embed Pods Frameworks */,
+				49BDA572CB8B502A20A61FD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFE0A99B1DBD31BA00FE3883 /* Build configuration list for PBXNativeTarget "FoodMeNowTests" */;
 			buildPhases = (
+				8D8525FAFA16F94C0613B5FF /* [CP] Check Pods Manifest.lock */,
 				BFE0A9801DBD31BA00FE3883 /* Sources */,
 				BFE0A9811DBD31BA00FE3883 /* Frameworks */,
 				BFE0A9821DBD31BA00FE3883 /* Resources */,
+				6DE6725E25248EB0FA529735 /* [CP] Embed Pods Frameworks */,
+				E1CD19F0AA953573FD082CA9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFE0A99E1DBD31BA00FE3883 /* Build configuration list for PBXNativeTarget "FoodMeNowUITests" */;
 			buildPhases = (
+				3588C3DE6B885DFF04FABFBC /* [CP] Check Pods Manifest.lock */,
 				BFE0A98B1DBD31BA00FE3883 /* Sources */,
 				BFE0A98C1DBD31BA00FE3883 /* Frameworks */,
 				BFE0A98D1DBD31BA00FE3883 /* Resources */,
+				6D141BD09443F85A80ECF1BC /* [CP] Embed Pods Frameworks */,
+				4DE5F6CF40CBC203E695DD0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3588C3DE6B885DFF04FABFBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		49BDA572CB8B502A20A61FD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodMeNow/Pods-FoodMeNow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DE5F6CF40CBC203E695DD0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodMeNowUITests/Pods-FoodMeNowUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D141BD09443F85A80ECF1BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodMeNowUITests/Pods-FoodMeNowUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DE6725E25248EB0FA529735 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodMeNowTests/Pods-FoodMeNowTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80C976F8BEE35E14FF4F3D0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D8525FAFA16F94C0613B5FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1CD19F0AA953573FD082CA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodMeNowTests/Pods-FoodMeNowTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F26A5C9B0C373571E7DF2FAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodMeNow/Pods-FoodMeNow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFE0A9691DBD31BA00FE3883 /* Sources */ = {
@@ -414,6 +601,7 @@
 		};
 		BFE0A9991DBD31BA00FE3883 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 848E080ABF0A8A6A11D8E063 /* Pods-FoodMeNow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FoodMeNow/Info.plist;
@@ -426,6 +614,7 @@
 		};
 		BFE0A99A1DBD31BA00FE3883 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED3C88B7E9541206C42837BA /* Pods-FoodMeNow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FoodMeNow/Info.plist;
@@ -438,6 +627,7 @@
 		};
 		BFE0A99C1DBD31BA00FE3883 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAB3F0DDB3953D6C3813207E /* Pods-FoodMeNowTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +642,7 @@
 		};
 		BFE0A99D1DBD31BA00FE3883 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3400911C82E091D9BA75FD3 /* Pods-FoodMeNowTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +657,7 @@
 		};
 		BFE0A99F1DBD31BA00FE3883 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10E29A8C466AEF92460C5C7B /* Pods-FoodMeNowUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FoodMeNowUITests/Info.plist;
@@ -479,6 +671,7 @@
 		};
 		BFE0A9A01DBD31BA00FE3883 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29F37949CEA7E86F395F593 /* Pods-FoodMeNowUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FoodMeNowUITests/Info.plist;
@@ -509,6 +702,7 @@
 				BFE0A99A1DBD31BA00FE3883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFE0A99B1DBD31BA00FE3883 /* Build configuration list for PBXNativeTarget "FoodMeNowTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +711,7 @@
 				BFE0A99D1DBD31BA00FE3883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFE0A99E1DBD31BA00FE3883 /* Build configuration list for PBXNativeTarget "FoodMeNowUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +720,7 @@
 				BFE0A9A01DBD31BA00FE3883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

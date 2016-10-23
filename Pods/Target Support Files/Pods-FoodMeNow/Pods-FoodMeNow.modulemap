@@ -1,0 +1,6 @@
+framework module Pods_FoodMeNow {
+  umbrella header "Pods-FoodMeNow-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_FoodMeNowTests {
+  umbrella header "Pods-FoodMeNowTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
