@@ -9,7 +9,10 @@ target 'FoodMeNow' do
   pod 'GooglePlaces'
 
   # Pods for FoodMeNow
-
+  target 'FMNWidget' do
+    inherit! :search_paths
+  end
+  
   target 'FoodMeNowTests' do
     inherit! :search_paths
     # Pods for testing
