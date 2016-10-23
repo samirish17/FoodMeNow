@@ -21,7 +21,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // Dispose of any resources that can be recreated.
     }
     
-    func widgetPerformUpdate(completionHandler: ((NCUpdateResult) -> Void)) {
+    private func widgetPerformUpdate(completionHandler: ((NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
         
         // If an error is encountered, use NCUpdateResult.Failed
