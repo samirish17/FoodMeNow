@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CE204BB1DC50B11000727CD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0CE204B91DC50B11000727CD /* Podfile */; };
+		0CE204BC1DC50B11000727CD /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 0CE204BA1DC50B11000727CD /* Podfile.lock */; };
+		0CE204BE1DC50B8F000727CD /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 0CE204BD1DC50B8F000727CD /* Pods */; };
 		0F066D958FB1F2FCEA675D40 /* Pods_FoodMeNowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A65534968A5438D7E4F43E /* Pods_FoodMeNowUITests.framework */; };
 		309B7B5EC06DA2EB63B6C099 /* Pods_FoodMeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB80D62C16FDDE8876947BB3 /* Pods_FoodMeNow.framework */; };
 		5182BB0878FAC5A06DA1CD24 /* Pods_FoodMeNowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B9F94850BEBADD249196A7 /* Pods_FoodMeNowTests.framework */; };
@@ -64,6 +67,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0CE204B91DC50B11000727CD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		0CE204BA1DC50B11000727CD /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		0CE204BD1DC50B8F000727CD /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
 		10E29A8C466AEF92460C5C7B /* Pods-FoodMeNowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodMeNowUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodMeNowUITests/Pods-FoodMeNowUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		18FDA8BEE1C9A6CAD08AC198 /* Pods-FMNWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMNWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMNWidget/Pods-FMNWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		3534D11801076DC82C32131C /* Pods-FMNWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMNWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMNWidget/Pods-FMNWidget.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +143,7 @@
 		5EF23941976AF046BA3F617E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				0CE204BD1DC50B8F000727CD /* Pods */,
 				848E080ABF0A8A6A11D8E063 /* Pods-FoodMeNow.debug.xcconfig */,
 				ED3C88B7E9541206C42837BA /* Pods-FoodMeNow.release.xcconfig */,
 				DAB3F0DDB3953D6C3813207E /* Pods-FoodMeNowTests.debug.xcconfig */,
@@ -174,6 +181,8 @@
 		BFE0A9641DBD31BA00FE3883 = {
 			isa = PBXGroup;
 			children = (
+				0CE204B91DC50B11000727CD /* Podfile */,
+				0CE204BA1DC50B11000727CD /* Podfile.lock */,
 				BFE0A96F1DBD31BA00FE3883 /* FoodMeNow */,
 				BFE0A9871DBD31BA00FE3883 /* FoodMeNowTests */,
 				BFE0A9921DBD31BA00FE3883 /* FoodMeNowUITests */,
@@ -379,6 +388,9 @@
 			files = (
 				BFE0A97E1DBD31BA00FE3883 /* LaunchScreen.storyboard in Resources */,
 				BFE0A97B1DBD31BA00FE3883 /* Assets.xcassets in Resources */,
+				0CE204BE1DC50B8F000727CD /* Pods in Resources */,
+				0CE204BC1DC50B11000727CD /* Podfile.lock in Resources */,
+				0CE204BB1DC50B11000727CD /* Podfile in Resources */,
 				BFE0A9761DBD31BA00FE3883 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
