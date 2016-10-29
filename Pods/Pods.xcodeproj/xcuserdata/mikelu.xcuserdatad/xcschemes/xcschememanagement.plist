@@ -6,34 +6,38 @@
 	<dict>
 		<key>Pods-FMNWidget.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-FoodMeNow.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>Pods-FoodMeNowTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-FoodMeNowUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>02DB9E8E98FAAE9CF706820BF1352B05</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>25BF40D3CEBEF8962B346D5CB7A74824</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>31514B12A3201661F13B3E19F3DB8289</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -44,6 +48,16 @@
 			<true/>
 		</dict>
 		<key>7518175D24F38EDF08C2125DD3A1A34B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B5E208D7D593662D426A30DECF200A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A942616AFF58383D93F50998E0404418</key>
 		<dict>
 			<key>primary</key>
 			<true/>

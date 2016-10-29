@@ -11,31 +11,31 @@ import GoogleMaps
 import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-    let locationManager = CLLocationManager()
+    var locationManager: CLLocationManager = CLLocationManager()
+    var userLocation: CLLocation!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//        locationManager.delegate = self
+//        locationManager.requestAlwaysAuthorization()
+//        
+//        
+//        locationManager.startUpdatingLocation()
+        locationManager.delegate = self
+        
         self.locationManager.requestWhenInUseAuthorization()
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager.startUpdatingLocation()
-        }
+        locationManager.distanceFilter = kCLDistanceFilterNone
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
 
-        // coordinate -33.86,151.20 at zoom level 6.
-        let camera = GMSCameraPosition.camera(withLatitude:locationManager.location!.coordinate.latitude, longitude: locationManager.location!.coordinate.longitude, zoom: 16.0)
-        let mapView = GMSMapView.map(withFrame:CGRect.zero, camera: camera)
-        mapView.isMyLocationEnabled = true
-        view = mapView
+        userLocation = locationManager.location
         
-        // Creates a marker in the center of the map.
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: locationManager.location!.coordinate.latitude, longitude: locationManager.location!.coordinate.longitude)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
+
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,6 +43,31 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    func locationManager( _ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        locationManager.stopUpdatingLocation()
+        
+        let latestLocation: AnyObject = locations[locations.count - 1]
+        
+        if userLocation == nil {
+            userLocation = latestLocation as! CLLocation
+        }
+        
+        //camera
+        let camera = GMSCameraPosition.camera(withLatitude:userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude, zoom: 16.0)
+        let mapView = GMSMapView.map(withFrame:CGRect.zero, camera: camera)
+        mapView.isMyLocationEnabled = true
+        view = mapView
+        
+        //map
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
+        marker.title = "Sydney"
+        marker.snippet = "Australia"
+        marker.map = mapView
+        
+        
+    }
+    
 
 }
 
