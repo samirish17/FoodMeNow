@@ -338,7 +338,13 @@
 					};
 					BFE0A96C1DBD31BA00FE3883 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 47NPSBXG7Z;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					BFE0A9831DBD31BA00FE3883 = {
 						CreatedOnToolsVersion = 8.0;
@@ -789,6 +795,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 47NPSBXG7Z;
 				INFOPLIST_FILE = FoodMeNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = foodmenow.FoodMeNow;
@@ -803,6 +810,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 47NPSBXG7Z;
 				INFOPLIST_FILE = FoodMeNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = foodmenow.FoodMeNow;

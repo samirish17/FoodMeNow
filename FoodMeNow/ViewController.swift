@@ -52,18 +52,45 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             userLocation = latestLocation as! CLLocation
         }
         
-        //camera
-        let camera = GMSCameraPosition.camera(withLatitude:userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude, zoom: 16.0)
-        let mapView = GMSMapView.map(withFrame:CGRect.zero, camera: camera)
-        mapView.isMyLocationEnabled = true
-        view = mapView
+        let resourceURI = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + String(userLocation.coordinate.latitude) + "," + String(userLocation.coordinate.longitude) + "&rankby=distance&type=restaurant&key=AIzaSyB1A692Ft8OD3PCfNTUZChXi1GS0q6urkA";
         
-        //map
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
+        
+        let myURL = NSURL(string: resourceURI)
+        
+        let request = NSMutableURLRequest(url:myURL as! URL)
+        
+        request.httpMethod = "GET"
+        
+        let task = URLSession.shared.dataTask(with: request as URLRequest) {
+            data, response, error in
+            
+            // Check for error
+            if error != nil
+            {
+                print("error=\(error)")
+                return
+            }
+            
+            // Print out response string
+            let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+            //print("responseString = \(responseString)")
+            
+            
+            // Convert server json response to NSDictionary
+            do {
+                if let convertedJsonIntoDict = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
+                    
+                    // Print out dictionary
+                    print(convertedJsonIntoDict["results"])
+                    
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+            
+        }
+        
+        task.resume()
         
         
     }
