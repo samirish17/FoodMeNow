@@ -9,10 +9,14 @@
 import UIKit
 import NotificationCenter
 import CoreLocation
+var locs: JSON!
 
 class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManagerDelegate {
     var locationManager: CLLocationManager = CLLocationManager()
     var userLocation: CLLocation!
+    @IBOutlet var restaurantName: UILabel!
+    @IBOutlet var imgFoodType: UIImageView!
+    @IBOutlet var distance: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +52,11 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
         
         userLocation = locationManager.location
         
+        print("assigning")
+        self.restaurantName.text = "test" + "\n\nDistance"
+        self.imgFoodType.image = UIImage(named: "rightarrow")
+        self.distance.text = "0.99999mi"
+        
         completionHandler(NCUpdateResult.newData)
     }
     
@@ -80,26 +89,30 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
             }
             
             // Print out response string
-            let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+            //let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
             //print("responseString = \(responseString)")
             
+            locs = JSON(data: data!)
             
+            print(locs["results"][0]["name"])
+            print("-----------------------------------------------")
             // Convert server json response to NSDictionary
-            do {
-                if let convertedJsonIntoDict = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
-                    
-                    // Print out dictionary
-                    print(convertedJsonIntoDict["results"])
-                    
-                }
-            } catch let error as NSError {
-                print(error.localizedDescription)
-            }
+//            do {
+//                if let convertedJsonIntoDict = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
+//                    
+//                    // Print out dictionary
+//                    //print(convertedJsonIntoDict["results"])
+//                    print("made it")
+//                    
+//                }
+//            } catch let error as NSError {
+//                print(error.localizedDescription)
+//            }
             
         }
         
+        
+        
         task.resume()
-        
-        
     }
 }

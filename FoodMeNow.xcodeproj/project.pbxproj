@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C5A0B4D1DCC096600952CBB /* rightarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5A0B4C1DCC096600952CBB /* rightarrow.png */; };
+		0C5A0B4F1DCC0BCF00952CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE0A97A1DBD31BA00FE3883 /* Assets.xcassets */; };
+		0C5A0B501DCC0BD000952CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE0A97A1DBD31BA00FE3883 /* Assets.xcassets */; };
+		0CA336711DCC14C7000C20BE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA336701DCC14C7000C20BE /* SwiftyJSON.swift */; };
+		0CA336721DCC14C7000C20BE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA336701DCC14C7000C20BE /* SwiftyJSON.swift */; };
 		0CE204BB1DC50B11000727CD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0CE204B91DC50B11000727CD /* Podfile */; };
 		0CE204BC1DC50B11000727CD /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 0CE204BA1DC50B11000727CD /* Podfile.lock */; };
 		0CE204BE1DC50B8F000727CD /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 0CE204BD1DC50B8F000727CD /* Pods */; };
@@ -22,7 +27,6 @@
 		BFE0A9731DBD31BA00FE3883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A9721DBD31BA00FE3883 /* ViewController.swift */; };
 		BFE0A9761DBD31BA00FE3883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE0A9741DBD31BA00FE3883 /* Main.storyboard */; };
 		BFE0A9791DBD31BA00FE3883 /* FoodMeNow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A9771DBD31BA00FE3883 /* FoodMeNow.xcdatamodeld */; };
-		BFE0A97B1DBD31BA00FE3883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE0A97A1DBD31BA00FE3883 /* Assets.xcassets */; };
 		BFE0A97E1DBD31BA00FE3883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE0A97C1DBD31BA00FE3883 /* LaunchScreen.storyboard */; };
 		BFE0A9891DBD31BA00FE3883 /* FoodMeNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A9881DBD31BA00FE3883 /* FoodMeNowTests.swift */; };
 		BFE0A9941DBD31BA00FE3883 /* FoodMeNowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A9931DBD31BA00FE3883 /* FoodMeNowUITests.swift */; };
@@ -67,6 +71,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C5A0B4B1DCC047500952CBB /* FoodMeNow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoodMeNow.entitlements; sourceTree = "<group>"; };
+		0C5A0B4C1DCC096600952CBB /* rightarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightarrow.png; sourceTree = "<group>"; };
+		0CA3366F1DCC1105000C20BE /* FMNWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FMNWidget.entitlements; sourceTree = "<group>"; };
+		0CA336701DCC14C7000C20BE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		0CE204B91DC50B11000727CD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		0CE204BA1DC50B11000727CD /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		0CE204BD1DC50B8F000727CD /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
@@ -159,6 +167,8 @@
 		9B6746871DBD54B800969E45 /* FMNWidget */ = {
 			isa = PBXGroup;
 			children = (
+				0CA3366F1DCC1105000C20BE /* FMNWidget.entitlements */,
+				0C5A0B4C1DCC096600952CBB /* rightarrow.png */,
 				9B6746881DBD54B800969E45 /* TodayViewController.swift */,
 				9B67468A1DBD54B800969E45 /* MainInterface.storyboard */,
 				9B67468D1DBD54B800969E45 /* Info.plist */,
@@ -181,6 +191,7 @@
 		BFE0A9641DBD31BA00FE3883 = {
 			isa = PBXGroup;
 			children = (
+				0CA336701DCC14C7000C20BE /* SwiftyJSON.swift */,
 				0CE204B91DC50B11000727CD /* Podfile */,
 				0CE204BA1DC50B11000727CD /* Podfile.lock */,
 				BFE0A96F1DBD31BA00FE3883 /* FoodMeNow */,
@@ -207,12 +218,13 @@
 		BFE0A96F1DBD31BA00FE3883 /* FoodMeNow */ = {
 			isa = PBXGroup;
 			children = (
+				0C5A0B4B1DCC047500952CBB /* FoodMeNow.entitlements */,
 				BFE0A9701DBD31BA00FE3883 /* AppDelegate.swift */,
 				BFE0A9721DBD31BA00FE3883 /* ViewController.swift */,
 				BFE0A9741DBD31BA00FE3883 /* Main.storyboard */,
 				BFE0A97A1DBD31BA00FE3883 /* Assets.xcassets */,
-				BFE0A97C1DBD31BA00FE3883 /* LaunchScreen.storyboard */,
 				BFE0A97F1DBD31BA00FE3883 /* Info.plist */,
+				BFE0A97C1DBD31BA00FE3883 /* LaunchScreen.storyboard */,
 				BFE0A9771DBD31BA00FE3883 /* FoodMeNow.xcdatamodeld */,
 			);
 			path = FoodMeNow;
@@ -334,7 +346,13 @@
 				TargetAttributes = {
 					9B6746831DBD54B800969E45 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 47NPSBXG7Z;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					BFE0A96C1DBD31BA00FE3883 = {
 						CreatedOnToolsVersion = 8.0;
@@ -342,7 +360,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -384,6 +402,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C5A0B4D1DCC096600952CBB /* rightarrow.png in Resources */,
+				0C5A0B4F1DCC0BCF00952CBB /* Assets.xcassets in Resources */,
 				9B67468C1DBD54B800969E45 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,10 +413,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE0A97E1DBD31BA00FE3883 /* LaunchScreen.storyboard in Resources */,
-				BFE0A97B1DBD31BA00FE3883 /* Assets.xcassets in Resources */,
 				0CE204BE1DC50B8F000727CD /* Pods in Resources */,
 				0CE204BC1DC50B11000727CD /* Podfile.lock in Resources */,
 				0CE204BB1DC50B11000727CD /* Podfile in Resources */,
+				0C5A0B501DCC0BD000952CBB /* Assets.xcassets in Resources */,
 				BFE0A9761DBD31BA00FE3883 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,6 +611,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B6746891DBD54B800969E45 /* TodayViewController.swift in Sources */,
+				0CA336721DCC14C7000C20BE /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +622,7 @@
 				BFE0A9791DBD31BA00FE3883 /* FoodMeNow.xcdatamodeld in Sources */,
 				BFE0A9731DBD31BA00FE3883 /* ViewController.swift in Sources */,
 				BFE0A9711DBD31BA00FE3883 /* AppDelegate.swift in Sources */,
+				0CA336711DCC14C7000C20BE /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +694,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18FDA8BEE1C9A6CAD08AC198 /* Pods-FMNWidget.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FMNWidget/FMNWidget.entitlements;
+				DEVELOPMENT_TEAM = 47NPSBXG7Z;
 				INFOPLIST_FILE = FMNWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = foodmenow.FoodMeNow.FMNWidget;
@@ -685,6 +709,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3534D11801076DC82C32131C /* Pods-FMNWidget.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FMNWidget/FMNWidget.entitlements;
+				DEVELOPMENT_TEAM = 47NPSBXG7Z;
 				INFOPLIST_FILE = FMNWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = foodmenow.FoodMeNow.FMNWidget;
@@ -795,6 +821,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FoodMeNow/FoodMeNow.entitlements;
 				DEVELOPMENT_TEAM = 47NPSBXG7Z;
 				INFOPLIST_FILE = FoodMeNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -810,6 +837,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FoodMeNow/FoodMeNow.entitlements;
 				DEVELOPMENT_TEAM = 47NPSBXG7Z;
 				INFOPLIST_FILE = FoodMeNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The application uses this information to show you your location</string>
 	<key>CFBundleDisplayName</key>
 	<string>FMNWidget</string>
 	<key>CFBundleExecutable</key>
