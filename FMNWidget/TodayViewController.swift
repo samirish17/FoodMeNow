@@ -12,29 +12,48 @@ import CoreLocation
 var locs: JSON!
 
 class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManagerDelegate {
-    var locationManager: CLLocationManager = CLLocationManager()
     var userLocation: CLLocation!
-    @IBOutlet var restaurantName: UILabel!
-    @IBOutlet var imgFoodType: UIImageView!
-    @IBOutlet var distance: UILabel!
+    
+    @IBOutlet weak var longitudeLabel: UILabel!
+    @IBOutlet weak var latitiudeLabel: UILabel!
+    var locationManager: CLLocationManager = CLLocationManager()
+    var currentLocation: CLLocation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        locationManager.delegate = self
-        
-        self.locationManager.requestWhenInUseAuthorization()
-        locationManager.distanceFilter = kCLDistanceFilterNone
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-        
-        userLocation = locationManager.location
-        // Do any additional setup after loading the view from its nib.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func performWidget()
+    {
+        print("---------------hi------------------")
+        if currentLocation != nil {
+            let latitudeText = String(format: "Lat: %.4f",
+                                      currentLocation!.coordinate.latitude)
+            
+            let longitudeText = String(format: "Lon: %.4f",
+                                       currentLocation!.coordinate.longitude)
+            
+            latitiudeLabel.text = latitudeText
+            longitudeLabel.text = longitudeText
+        }
+        else {
+            print("uh oh")
+            latitiudeLabel.text = "no location?"
+            longitudeLabel.text = "oops"
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        performWidget()
     }
     
     private func widgetPerformUpdate(completionHandler: ((NCUpdateResult) -> Void)) {
@@ -43,7 +62,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
-        locationManager.delegate = self
+        /*locationManager.delegate = self
         
         self.locationManager.requestWhenInUseAuthorization()
         locationManager.distanceFilter = kCLDistanceFilterNone
@@ -55,12 +74,21 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
         print("assigning")
         self.restaurantName.text = "test" + "\n\nDistance"
         self.imgFoodType.image = UIImage(named: "rightarrow")
-        self.distance.text = "0.99999mi"
+        self.distance.text = "0.99999mi"*/
+        
+        performWidget()
         
         completionHandler(NCUpdateResult.newData)
     }
     
-    func locationManager( _ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    private func locationManager(manager: CLLocationManager!,
+                         didUpdateLocations locations: [AnyObject]!)
+    {
+        currentLocation = locations[locations.count - 1]
+            as? CLLocation
+    }
+    
+    /*func locationManager( _ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationManager.stopUpdatingLocation()
         
         let latestLocation: AnyObject = locations[locations.count - 1]
@@ -114,5 +142,5 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
         
         
         task.resume()
-    }
+    }*/
 }
