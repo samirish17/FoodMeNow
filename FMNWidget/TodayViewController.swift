@@ -9,18 +9,21 @@
 import UIKit
 import NotificationCenter
 import CoreLocation
-var locs: JSON!
 
 class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManagerDelegate {
     var locationManager: CLLocationManager = CLLocationManager()
     var userLocation: CLLocation!
-    @IBOutlet var restaurantName: UILabel!
-    @IBOutlet var imgFoodType: UIImageView!
-    @IBOutlet var distance: UILabel!
+    var locs: JSON!
+    var current: Int!
+    @IBOutlet weak var place: UILabel!
+    
+    @IBAction func Next(_ sender: AnyObject) {
+        self.current = self.current + 1
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.current = 0
         locationManager.delegate = self
         
         self.locationManager.requestWhenInUseAuthorization()
@@ -37,32 +40,29 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        locationManager.startUpdatingLocation()
+        
+        userLocation = locationManager.location
+        
+    }
+    
     private func widgetPerformUpdate(completionHandler: ((NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
         
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
-        locationManager.delegate = self
-        
-        self.locationManager.requestWhenInUseAuthorization()
-        locationManager.distanceFilter = kCLDistanceFilterNone
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
         
         userLocation = locationManager.location
-        
-        print("assigning")
-        self.restaurantName.text = "test" + "\n\nDistance"
-        self.imgFoodType.image = UIImage(named: "rightarrow")
-        self.distance.text = "0.99999mi"
         
         completionHandler(NCUpdateResult.newData)
     }
     
     func locationManager( _ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationManager.stopUpdatingLocation()
-        
+        print("hi-------------------------------")
         let latestLocation: AnyObject = locations[locations.count - 1]
         
         if userLocation == nil {
@@ -92,9 +92,9 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
             //let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
             //print("responseString = \(responseString)")
             
-            locs = JSON(data: data!)
-            
-            print(locs["results"][0]["name"])
+            self.locs = JSON(data: data!)
+            self.place.text = self.locs["results"][self.current]["name"].string
+            print(self.locs["results"][0]["name"])
             print("-----------------------------------------------")
             // Convert server json response to NSDictionary
 //            do {

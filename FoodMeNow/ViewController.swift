@@ -72,7 +72,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             }
             
             // Print out response string
-            let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+            // let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
             //print("responseString = \(responseString)")
             
             

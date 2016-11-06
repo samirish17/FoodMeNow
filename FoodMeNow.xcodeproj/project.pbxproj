@@ -15,14 +15,10 @@
 		0CE204BB1DC50B11000727CD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0CE204B91DC50B11000727CD /* Podfile */; };
 		0CE204BC1DC50B11000727CD /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 0CE204BA1DC50B11000727CD /* Podfile.lock */; };
 		0CE204BE1DC50B8F000727CD /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 0CE204BD1DC50B8F000727CD /* Pods */; };
-		0F066D958FB1F2FCEA675D40 /* Pods_FoodMeNowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A65534968A5438D7E4F43E /* Pods_FoodMeNowUITests.framework */; };
-		309B7B5EC06DA2EB63B6C099 /* Pods_FoodMeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB80D62C16FDDE8876947BB3 /* Pods_FoodMeNow.framework */; };
-		5182BB0878FAC5A06DA1CD24 /* Pods_FoodMeNowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B9F94850BEBADD249196A7 /* Pods_FoodMeNowTests.framework */; };
 		9B6746861DBD54B800969E45 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6746851DBD54B800969E45 /* NotificationCenter.framework */; };
 		9B6746891DBD54B800969E45 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6746881DBD54B800969E45 /* TodayViewController.swift */; };
 		9B67468C1DBD54B800969E45 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B67468A1DBD54B800969E45 /* MainInterface.storyboard */; };
 		9B6746901DBD54B800969E45 /* FMNWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B6746841DBD54B800969E45 /* FMNWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A3AB9E402DEB5C71EE655DCE /* Pods_FMNWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC7D193F4CDEF769332B315 /* Pods_FMNWidget.framework */; };
 		BFE0A9711DBD31BA00FE3883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A9701DBD31BA00FE3883 /* AppDelegate.swift */; };
 		BFE0A9731DBD31BA00FE3883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A9721DBD31BA00FE3883 /* ViewController.swift */; };
 		BFE0A9761DBD31BA00FE3883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE0A9741DBD31BA00FE3883 /* Main.storyboard */; };
@@ -81,8 +77,6 @@
 		10E29A8C466AEF92460C5C7B /* Pods-FoodMeNowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodMeNowUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodMeNowUITests/Pods-FoodMeNowUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		18FDA8BEE1C9A6CAD08AC198 /* Pods-FMNWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMNWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMNWidget/Pods-FMNWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		3534D11801076DC82C32131C /* Pods-FMNWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMNWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMNWidget/Pods-FMNWidget.release.xcconfig"; sourceTree = "<group>"; };
-		44B9F94850BEBADD249196A7 /* Pods_FoodMeNowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodMeNowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70A65534968A5438D7E4F43E /* Pods_FoodMeNowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodMeNowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		848E080ABF0A8A6A11D8E063 /* Pods-FoodMeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodMeNow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodMeNow/Pods-FoodMeNow.debug.xcconfig"; sourceTree = "<group>"; };
 		9B6746841DBD54B800969E45 /* FMNWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FMNWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6746851DBD54B800969E45 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
@@ -104,9 +98,7 @@
 		BFE0A9931DBD31BA00FE3883 /* FoodMeNowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMeNowUITests.swift; sourceTree = "<group>"; };
 		BFE0A9951DBD31BA00FE3883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C29F37949CEA7E86F395F593 /* Pods-FoodMeNowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodMeNowUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodMeNowUITests/Pods-FoodMeNowUITests.release.xcconfig"; sourceTree = "<group>"; };
-		CB80D62C16FDDE8876947BB3 /* Pods_FoodMeNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodMeNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3F0DDB3953D6C3813207E /* Pods-FoodMeNowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodMeNowTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodMeNowTests/Pods-FoodMeNowTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DAC7D193F4CDEF769332B315 /* Pods_FMNWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMNWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3400911C82E091D9BA75FD3 /* Pods-FoodMeNowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodMeNowTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodMeNowTests/Pods-FoodMeNowTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED3C88B7E9541206C42837BA /* Pods-FoodMeNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodMeNow.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodMeNow/Pods-FoodMeNow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,7 +109,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B6746861DBD54B800969E45 /* NotificationCenter.framework in Frameworks */,
-				A3AB9E402DEB5C71EE655DCE /* Pods_FMNWidget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +116,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				309B7B5EC06DA2EB63B6C099 /* Pods_FoodMeNow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +123,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5182BB0878FAC5A06DA1CD24 /* Pods_FoodMeNowTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +130,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F066D958FB1F2FCEA675D40 /* Pods_FoodMeNowUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,11 +167,7 @@
 		AAF199287B053AF5D213AEE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB80D62C16FDDE8876947BB3 /* Pods_FoodMeNow.framework */,
-				44B9F94850BEBADD249196A7 /* Pods_FoodMeNowTests.framework */,
-				70A65534968A5438D7E4F43E /* Pods_FoodMeNowUITests.framework */,
 				9B6746851DBD54B800969E45 /* NotificationCenter.framework */,
-				DAC7D193F4CDEF769332B315 /* Pods_FMNWidget.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
