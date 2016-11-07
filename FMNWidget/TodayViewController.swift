@@ -9,6 +9,7 @@
 import UIKit
 import NotificationCenter
 import CoreLocation
+import Foundation
 
 
 class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManagerDelegate {
@@ -18,6 +19,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
     var current: Int!
     @IBOutlet weak var typeOf: UIImageView!
     @IBOutlet weak var place: UILabel!
+    @IBOutlet weak var miles: UILabel!
     
     @IBAction func Next(_ sender: AnyObject) {
         self.current = self.current + 1
@@ -102,6 +104,13 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
             self.place.text = self.locs["results"][self.current]["name"].string
             print(self.locs["results"][0]["name"])
             print("-----------------------------------------------")
+            
+            let placelocation = CLLocation(latitude: self.locs["results"][0]["geometry"]["location"]["lat"].double!, longitude: self.locs["results"][0]["geometry"]["location"]["lng"].double!)
+            
+            let distanceInMiles = placelocation.distance(from: self.userLocation)/1609.344
+            
+            self.miles.text = String(round(distanceInMiles*100)/100)+" Miles";
+            
             // Convert server json response to NSDictionary
 //            do {
 //                if let convertedJsonIntoDict = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
@@ -116,8 +125,6 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
 //            }
             
         }
-        
-        
         
         task.resume()
     }
