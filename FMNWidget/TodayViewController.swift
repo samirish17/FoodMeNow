@@ -17,12 +17,32 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
     var userLocation: CLLocation!
     var locs: JSON!
     var current: Int!
-    @IBOutlet weak var typeOf: UIImageView!
+    
     @IBOutlet weak var place: UILabel!
     @IBOutlet weak var miles: UILabel!
     
-    @IBAction func Next(_ sender: AnyObject) {
-        self.current = self.current + 1
+    @IBOutlet weak var Next: UIButton!
+    
+    @IBAction func nextOne(_ sender: AnyObject) {
+        if (locs != nil) {
+            
+            if (self.current < locs["results"].count - 1) {
+                self.current = self.current + 1
+            }
+            else {
+                self.current = 0
+            }
+            
+            self.place.text = self.locs["results"][self.current]["name"].string
+            print(self.locs["results"][self.current]["name"])
+            print("-----------------------------------------------")
+            
+            let placelocation = CLLocation(latitude: self.locs["results"][self.current]["geometry"]["location"]["lat"].double!, longitude: self.locs["results"][self.current]["geometry"]["location"]["lng"].double!)
+            
+            let distanceInMiles = placelocation.distance(from: self.userLocation)/1609.344
+            
+            self.miles.text = String(round(distanceInMiles*100)/100)+" Miles"
+        }
     }
     
     override func viewDidLoad() {
@@ -102,10 +122,10 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
             
             self.locs = JSON(data: data!)
             self.place.text = self.locs["results"][self.current]["name"].string
-            print(self.locs["results"][0]["name"])
+            print(self.locs["results"][self.current]["name"])
             print("-----------------------------------------------")
             
-            let placelocation = CLLocation(latitude: self.locs["results"][0]["geometry"]["location"]["lat"].double!, longitude: self.locs["results"][0]["geometry"]["location"]["lng"].double!)
+            let placelocation = CLLocation(latitude: self.locs["results"][self.current]["geometry"]["location"]["lat"].double!, longitude: self.locs["results"][self.current]["geometry"]["location"]["lng"].double!)
             
             let distanceInMiles = placelocation.distance(from: self.userLocation)/1609.344
             
