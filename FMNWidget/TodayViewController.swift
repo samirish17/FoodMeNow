@@ -10,11 +10,13 @@ import UIKit
 import NotificationCenter
 import CoreLocation
 
+
 class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManagerDelegate {
     var locationManager: CLLocationManager = CLLocationManager()
     var userLocation: CLLocation!
     var locs: JSON!
     var current: Int!
+    @IBOutlet weak var typeOf: UIImageView!
     @IBOutlet weak var place: UILabel!
     
     @IBAction func Next(_ sender: AnyObject) {
@@ -57,12 +59,16 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
         
         userLocation = locationManager.location
         
+        if (self.locs != nil) {
+            self.place.text = self.locs["results"][self.current]["name"].string
+        }
+        
         completionHandler(NCUpdateResult.newData)
     }
     
     func locationManager( _ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationManager.stopUpdatingLocation()
-        print("hi-------------------------------")
+
         let latestLocation: AnyObject = locations[locations.count - 1]
         
         if userLocation == nil {
