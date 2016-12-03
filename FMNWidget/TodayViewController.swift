@@ -21,8 +21,27 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
     @IBOutlet weak var place: UILabel!
     @IBOutlet weak var miles: UILabel!
     
+    @IBOutlet weak var GO: UIButton!
     @IBOutlet weak var Prev: UIButton!
     @IBOutlet weak var Next: UIButton!
+    
+    @IBAction func openMaps(_ sender: AnyObject) {
+        UIView.animate(withDuration: 0.1, delay: 0.0, options: UIViewAnimationOptions.curveEaseOut, animations: {
+            self.GO.alpha = 0.0
+            }, completion: {
+                (finished: Bool) -> Void in
+                
+                // Fade in
+                UIView.animate(withDuration: 0.05, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+                    self.GO.alpha = 1.0
+                    }, completion: nil)
+        })
+        
+        let long = String(self.locs["results"][self.current]["geometry"]["location"]["lng"].double!)
+        let lat = String(self.locs["results"][self.current]["geometry"]["location"]["lat"].double!)
+        self.extensionContext?.open(NSURL(string: "comgooglemaps://?saddr=&daddr=\(lat),\(long)&directionsmode=walking"
+                )! as URL)
+    }
     
     @IBAction func prevOne(_ sender: AnyObject) {
         UIView.animate(withDuration: 0.1, delay: 0.0, options: UIViewAnimationOptions.curveEaseOut, animations: {

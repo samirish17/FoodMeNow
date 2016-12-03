@@ -37,6 +37,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="GO"/>
+                                <connections>
+                                    <action selector="openMaps:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Uuf-f8-nab"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfM-TY-OwZ">
                                 <frame key="frameInset" minX="16" width="46" height="20" maxY="18"/>
@@ -76,6 +79,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="394" height="114"/>
                     <connections>
+                        <outlet property="GO" destination="m40-1k-PLF" id="TnB-W8-OnO"/>
                         <outlet property="Next" destination="idQ-Zw-ekR" id="Pwj-Wq-Kbu"/>
                         <outlet property="Prev" destination="BfM-TY-OwZ" id="cID-E2-tOQ"/>
                         <outlet property="miles" destination="7Gq-Si-DkK" id="MvJ-CM-bKF"/>
