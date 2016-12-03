@@ -26,13 +26,13 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
     
     @IBAction func prevOne(_ sender: AnyObject) {
         UIView.animate(withDuration: 0.1, delay: 0.0, options: UIViewAnimationOptions.curveEaseOut, animations: {
-            self.Next.alpha = 0.0
+            self.Prev.alpha = 0.0
             }, completion: {
                 (finished: Bool) -> Void in
                 
                 // Fade in
                 UIView.animate(withDuration: 0.05, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
-                    self.Next.alpha = 1.0
+                    self.Prev.alpha = 1.0
                     }, completion: nil)
         })
         
