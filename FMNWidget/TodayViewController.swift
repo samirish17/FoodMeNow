@@ -21,6 +21,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
     @IBOutlet weak var place: UILabel!
     @IBOutlet weak var miles: UILabel!
     
+    @IBOutlet weak var stars: CosmosView!
     @IBOutlet weak var GO: UIButton!
     @IBOutlet weak var Prev: UIButton!
     @IBOutlet weak var Next: UIButton!
@@ -63,6 +64,12 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
             else {
                 self.current = locs["results"].count - 1
             }
+            if(self.locs["results"][self.current]["rating"].exists()) {
+                self.stars.rating = self.locs["results"][self.current]["rating"].double!
+            }
+            else{
+                self.stars.rating = 0; //edit later
+            }
             
             self.place.text = self.locs["results"][self.current]["name"].string
             print(self.locs["results"][self.current]["name"])
@@ -97,6 +104,12 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
             else {
                 self.current = 0
             }
+            if(self.locs["results"][self.current]["rating"].exists()) {
+                self.stars.rating = self.locs["results"][self.current]["rating"].double!
+            }
+            else{
+                self.stars.rating = 0; //edit later
+            }
             
             self.place.text = self.locs["results"][self.current]["name"].string
             print(self.locs["results"][self.current]["name"])
@@ -121,6 +134,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
         locationManager.startUpdatingLocation()
         
         userLocation = locationManager.location
+        self.stars.settings.updateOnTouch = false
         // Do any additional setup after loading the view from its nib.
     }
     
@@ -193,6 +207,13 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
             let placelocation = CLLocation(latitude: self.locs["results"][self.current]["geometry"]["location"]["lat"].double!, longitude: self.locs["results"][self.current]["geometry"]["location"]["lng"].double!)
             
             let distanceInMiles = placelocation.distance(from: self.userLocation)/1609.344
+            
+            if(self.locs["results"][self.current]["rating"].exists()) {
+                self.stars.rating = self.locs["results"][self.current]["rating"].double!
+            }
+            else{
+                self.stars.rating = 0; //edit later
+            }
             
             self.miles.text = String(round(distanceInMiles*100)/100)+" Miles";
             
