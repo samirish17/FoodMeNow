@@ -19,6 +19,8 @@
 		9B6746891DBD54B800969E45 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6746881DBD54B800969E45 /* TodayViewController.swift */; };
 		9B67468C1DBD54B800969E45 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B67468A1DBD54B800969E45 /* MainInterface.storyboard */; };
 		9B6746901DBD54B800969E45 /* FMNWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B6746841DBD54B800969E45 /* FMNWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9BBB078C1DF36F76007CC299 /* Cosmos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB078B1DF36F76007CC299 /* Cosmos.swift */; };
+		9BBB078D1DF36F76007CC299 /* Cosmos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB078B1DF36F76007CC299 /* Cosmos.swift */; };
 		BFE0A9711DBD31BA00FE3883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A9701DBD31BA00FE3883 /* AppDelegate.swift */; };
 		BFE0A9731DBD31BA00FE3883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0A9721DBD31BA00FE3883 /* ViewController.swift */; };
 		BFE0A9761DBD31BA00FE3883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE0A9741DBD31BA00FE3883 /* Main.storyboard */; };
@@ -83,6 +85,7 @@
 		9B6746881DBD54B800969E45 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		9B67468B1DBD54B800969E45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		9B67468D1DBD54B800969E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BBB078B1DF36F76007CC299 /* Cosmos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cosmos.swift; sourceTree = "<group>"; };
 		BFE0A96D1DBD31BA00FE3883 /* FoodMeNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodMeNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE0A9701DBD31BA00FE3883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE0A9721DBD31BA00FE3883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				0CA336701DCC14C7000C20BE /* SwiftyJSON.swift */,
+				9BBB078B1DF36F76007CC299 /* Cosmos.swift */,
 				0CE204B91DC50B11000727CD /* Podfile */,
 				0CE204BA1DC50B11000727CD /* Podfile.lock */,
 				BFE0A96F1DBD31BA00FE3883 /* FoodMeNow */,
@@ -595,6 +599,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B6746891DBD54B800969E45 /* TodayViewController.swift in Sources */,
+				9BBB078D1DF36F76007CC299 /* Cosmos.swift in Sources */,
 				0CA336721DCC14C7000C20BE /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +611,7 @@
 				BFE0A9791DBD31BA00FE3883 /* FoodMeNow.xcdatamodeld in Sources */,
 				BFE0A9731DBD31BA00FE3883 /* ViewController.swift in Sources */,
 				BFE0A9711DBD31BA00FE3883 /* AppDelegate.swift in Sources */,
+				9BBB078C1DF36F76007CC299 /* Cosmos.swift in Sources */,
 				0CA336711DCC14C7000C20BE /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
