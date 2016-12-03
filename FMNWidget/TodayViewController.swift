@@ -21,7 +21,41 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
     @IBOutlet weak var place: UILabel!
     @IBOutlet weak var miles: UILabel!
     
+    @IBOutlet weak var Prev: UIButton!
     @IBOutlet weak var Next: UIButton!
+    
+    @IBAction func prevOne(_ sender: AnyObject) {
+        UIView.animate(withDuration: 0.1, delay: 0.0, options: UIViewAnimationOptions.curveEaseOut, animations: {
+            self.Next.alpha = 0.0
+            }, completion: {
+                (finished: Bool) -> Void in
+                
+                // Fade in
+                UIView.animate(withDuration: 0.05, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+                    self.Next.alpha = 1.0
+                    }, completion: nil)
+        })
+        
+        if (locs != nil) {
+            
+            if (self.current > 0) {
+                self.current = self.current - 1
+            }
+            else {
+                self.current = locs["results"].count - 1
+            }
+            
+            self.place.text = self.locs["results"][self.current]["name"].string
+            print(self.locs["results"][self.current]["name"])
+            print("-----------------------------------------------")
+            
+            let placelocation = CLLocation(latitude: self.locs["results"][self.current]["geometry"]["location"]["lat"].double!, longitude: self.locs["results"][self.current]["geometry"]["location"]["lng"].double!)
+            
+            let distanceInMiles = placelocation.distance(from: self.userLocation)/1609.344
+            
+            self.miles.text = String(round(distanceInMiles*100)/100)+" Miles"
+        }
+    }
     
     @IBAction func nextOne(_ sender: AnyObject) {
         
